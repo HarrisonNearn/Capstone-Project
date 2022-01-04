@@ -29,9 +29,9 @@ As I dove deeper into the cleaning and manipulation phase, I began sub-setting m
 I also wanted to be able to analyze the frequency of crimes throughout each of the years; however, I discovered the crimes were listed into two categories: the TIBRS code and the sub-classification of each crime.  A TIBRS (Tennessee Incident Based Reporting System) code is a list of crimes within the State of Tennessee with an associated numeric or alpha-numeric code for each one.  This allows the TBI to track statewide crime statistics.  Similarly, there is NIBRS (National Incident Based Reporting System) code which is handled by the FBI to allow for national tracking of crime statistics; and MNPD RMS (Report Management System) Codes which handle Metro-specific report codes.  As an example, the TIBRS/NIBRS code for an aggravated assault is a 13A; the MNPD RMS code for a matter of record report is a 740.  As I stated previously, in addition to those codes there was also incident sub-classifications.  An example of a sub-classification would be Theft of Vehicle - $25,000 to $50,000.  This tells me that a vehicle theft occurred, but also tells me how much the vehicle was worth.  For the purposes of this project, I wanted to know solely know that a theft of vehicle occurred; the value of the vehicle was unnecessary.  To remedy this, I made a dictionary within Python that defined each of the TIBRS, NIBRS, and MNPD RMS codes so I could track the occurrence of each crime by its name, not by its code or sub-classification.  Doing this allowed me to then aggregate the occurrence of each crime in 2019, 2020, and 2021; and then analyze them as necessary.
 
 *To create the dictionary I used the following TIBRS, NIBRS, and MNPD report codes*:
-[TIBRS](Snips/tibrs_code.JPG)
-[NIBRS](Other/NIBRS_Offense_Codes.pdf)
-[MNPD Side 1](Other/MNPD_Offense_Report_Codes) and [MNPD Side 2](Other/MNPD_Offense_Report_Codes2)
+[TIBRS](Snips/tibrs_code.JPG),
+[NIBRS](Other/NIBRS_Offense_Codes.pdf),
+[MNPD Side 1](Other/MNPD_Offense_Report_Codes), and [MNPD Side 2](Other/MNPD_Offense_Report_Codes2)
 
 ### *Top 5 Crimes*
 ![2019 top 5 crimes](Snips/19_top_5.JPG)
@@ -56,7 +56,7 @@ Throughout this process, I found myself constantly amazed at both the variation 
 ## Acknowledgements
 I would be remiss if did not mention all the people that made journey possible.  
 
-First, my family - without the constant, unending support from wife, Chelsey, and our beautiful daughters, Quinn and Ella; none of this would have been possible.  Although this class and project have kept me busy, I know my girls are happier to have me home.  
+First, my family.  Without the constant, unending support from wife, Chelsey, and our beautiful daughters, Quinn and Ella; none of this would have been possible.  Although this class and project have kept me busy, I know my girls are happier to have me home.  
 
 Second, to my NSS instructors: Chris, Josh, Chip, and Toni.  Their knowledge, guidance, and patience is without equal.  Looking back, it is truly amazing to see how far they can bring a blue collar street cop with no coding knowledge and no idea what he is doing.  They are truly masters of their craft.
 
